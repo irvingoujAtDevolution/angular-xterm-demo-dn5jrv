@@ -1,0 +1,6 @@
+<h1>angular xterm demo </h1>
+当前字符总量：{{ nums }}<br/><br/>
+操作:<button (click)="clear()">清空</button> &nbsp;&nbsp;<button (click)="addLogs(1000)">一次性添加1k条日志</button>&nbsp;&nbsp;<button (click)="addLogs(10000)">一次性添加1w条日志</button><br/><br/>
+参数:轮询打印日志: <input type="checkbox" [(ngModel)]="scroll"/><br/><br/>
+
+<alo-logs-xterm [logs]="logs"></alo-logs-xterm>
